@@ -1,5 +1,8 @@
 % Script to run 100 repition multiple imputation for 3 different model
 
+addpath('./model_functions/')
+addpath('./plotting_code/')
+
 %clear
 
 reps = 50; 
@@ -7,8 +10,10 @@ reps = 50;
 for z = 1:29
     
     z
-    
-    [num txt raw] = xlsread('Final.Spreadsheet.All.Raw.Data.Dan.withage.xlsx') ; 
+    raw_data=''
+
+    %Read in Raw Data
+    [num txt raw] = xlsread(raw_data) ; 
     
     %Remove Missing Data
     num = rmmissing(num) ; 
@@ -47,6 +52,7 @@ for z = 1:29
     num_for_reps(z) = n_obs_trim ; 
     save('num_for_reps.mat','num_for_reps')
     
+    %Run The Models
     %Run Linear Model
     %[yfit_lin, test_lin, subj_lin ] = nested_fcn_linear_model_February_7_2019(X,Y,subj_id,z) ; 
     
@@ -62,6 +68,7 @@ for z = 1:29
     %Run Random Forest
     %[yfit_rf, test_rf, subj_rf ] = nested_fcn_random_forest_model_December_18_2018(X,Y,subj_id,z) ; 
     
+    %Save the results
     %error_lin(z) = mean(abs(yfit_lin-test_lin)) ; 
     %error_qd(z) = mean(abs(yfit_qd-test_qd)) ;
     

@@ -1,6 +1,6 @@
 ## brain_age
 
-Research to evaluate the performance of various machine learning models used to predict a persons brain age from a multitude of fmri based biomarkers and cognitive behavioral performance.
+Research to evaluate the performance of various machine learning models used to predict a person's brain age from a multitude of fMRI based biomarkers and cognitive behavioral performance.
 
 Overview of the results: [link](https://drive.google.com/file/d/1Kg4D3cPZRcUF_NyETmu5_LwXXcVOb1Wh/view)
 
@@ -10,7 +10,9 @@ All functions are written in matlab.
 
 ## Description of Analysis
 
-The brain age of around 100 healthy adults participants across all ages was predicted using behavioral measures compiled in using a series of coginitive tests, thier functional connectivity profiles computed using CONN: [link](https://www.nitrc.org/projects/conn/) from some of the above tasks performed in an fMRI, as well as grey matter and white matter biomarkers computed using Freesurfer [link](https://surfer.nmr.mgh.harvard.edu/), also derived from their fMRI data. Because of the low N and high number of features a number of regression methods were compared. These included:
+The brain age of around 100 healthy adults participants across all ages was predicted using behavioral measures compiled in using a series of coginitive tests, their functional connectivity profiles computed using [CONN](https://www.nitrc.org/projects/conn/) and each person's fMRI data, as well as grey matter and white matter biomarkers computed using [Freesurfer](https://surfer.nmr.mgh.harvard.edu/), which is also derived from each person's fMRI data. A number of regression models were created and compared to see how they handle a low number of subjects and many features. 
+
+These included:
 
 Quadratic Model Regression
 General Linear Model Regression

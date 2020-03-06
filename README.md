@@ -29,6 +29,7 @@ Data is not included here for patient confidentiality reasons
 age_predict_master.m - Script to run all models
 
 /model_functions - Scripts for each model type
+
 	- nested_fcn_quadratic_model_February_7_2019.m 
 	- nested_fcn_linear_model_February_7_2019.m        
 	- nested_fcn_pls_model_December_18_2018.m     
@@ -36,6 +37,7 @@ age_predict_master.m - Script to run all models
 	- nested_fcn_svmr_model_December_18_2018.m                   
 	     
 /plotting_code - Scripts to plot the results created by above
+
 	- age_predict_master_plot.m  
 	- glm_plot.m  
 	- lasso_plot.m  

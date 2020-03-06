@@ -14,11 +14,11 @@ The brain age of around 100 healthy adults participants across all ages was pred
 
 These included:
 
-Quadratic Model Regression
-General Linear Model Regression
-Partial Least Squares Regression
-Random Forest Regression
-Support Vector Regression
+- Quadratic Model Regression
+- General Linear Model Regression
+- Partial Least Squares Regression
+- Random Forest Regression
+- Support Vector Regression
 
 Prediction was achieved using a nested cross validation structure to prevent over fitting. It was found that Support Vector Regression and Partial Least Squares Regression were able to outperform the other methods, achieving an average error of 7.4 years between the subjects real age and thier predicted age. 
 
@@ -29,18 +29,18 @@ Data is not included here for patient confidentiality reasons
 age_predict_master.m - Script to run all models
 
 /model_functions - Scripts for each model type
-	nested_fcn_quadratic_model_February_7_2019.m 
-	nested_fcn_linear_model_February_7_2019.m        
-	nested_fcn_pls_model_December_18_2018.m     
-	nested_fcn_random_forest_model_December_18_2018.m       
-	nested_fcn_svmr_model_December_18_2018.m                   
+	- nested_fcn_quadratic_model_February_7_2019.m 
+	- nested_fcn_linear_model_February_7_2019.m        
+	- nested_fcn_pls_model_December_18_2018.m     
+	- nested_fcn_random_forest_model_December_18_2018.m       
+	- nested_fcn_svmr_model_December_18_2018.m                   
 	     
 /plotting_code - Scripts to plot the results created by above
-	age_predict_master_plot.m  
-	glm_plot.m  
-	lasso_plot.m  
-	pls_plot_commented.m  
-	pls_plot.m  
-	rf_plot.m  
-	svmr_plot.m
+	- age_predict_master_plot.m  
+	- glm_plot.m  
+	- lasso_plot.m  
+	- pls_plot_commented.m  
+	- pls_plot.m  
+	- rf_plot.m  
+	- svmr_plot.m
 
